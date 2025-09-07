@@ -2,7 +2,6 @@
 SIH problem 81
 
 
-Got it ✅ thanks for clarifying — you’re asking about the **original Flask prototype project**, not the FastAPI one. I’ll now explain **each part of that Flask-based prototype**, why we used it, alternatives, and how you can defend the design in Q\&A.
 
 ---
 
@@ -187,5 +186,3 @@ kmrl-induction-prototype/
 ✅ Easy to replace components later (e.g., replace CSV with DB).
 
 ---
-
-Do you want me to now go **file by file** (starting from `app.py`) and explain line by line how it works and what alternatives you could answer in viva?
