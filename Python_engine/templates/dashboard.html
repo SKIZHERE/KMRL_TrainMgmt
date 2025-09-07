@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KMRL Smart Schedule</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Kochi Metro - Train Induction Dashboard - (Cache Me If You Can)</h1>
+  <p>Welcome, {{ user }} | <a href="{{ url_for('logout') }}">Logout</a></p>
+  
+  <table border="1" cellpadding="8">
+    <tr>
+      <th>Rank</th>
+      <th>Trainset ID</th>
+      <th>Score</th>
+      <th>Reasons</th>
+    </tr>
+    {% for t in trainsets %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ t.id }}</td>
+      <td>{{ t.score }}</td>
+      <td>{{ ", ".join(t.reasons) }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h2>What-if Simulation</h2>
+<form method="POST" action="{{ url_for('simulate') }}">
+  <label for="trainset">Choose Trainset:</label>
+  <select name="trainset_id">
+    {% for t in trainsets %}
+      <option value="{{ t.id }}">{{ t.id }}</option>
+    {% endfor %}
+  </select><br><br>
+
+  <label>Fitness:</label>
+  <select name="fitness">
+    <option value="valid">Valid</option>
+    <option value="expired">Expired</option>
+  </select><br><br>
+
+  <label>Jobcard:</label>
+  <select name="jobcard">
+    <option value="closed">Closed</option>
+    <option value="open">Open</option>
+  </select><br><br>
+
+  <label>Branding:</label>
+  <select name="branding">
+    <option value="priority">Priority</option>
+    <option value="normal">Normal</option>
+  </select><br><br>
+
+  <button type="submit">Recalculate</button>
+</form>
+
+{% if simulation %}
+  <h3>Simulation Result</h3>
+  <p><b>Trainset {{ simulation.id }}</b> scored <b>{{ simulation.score }}</b></p>
+  <p>Reasons: {{ ", ".join(simulation.reasons) }}</p>
+{% endif %}
+
+</body>
+</html>

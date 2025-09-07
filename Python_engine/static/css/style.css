@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  width: 95%;
+  padding: 10px;
+  background: #0077cc;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
