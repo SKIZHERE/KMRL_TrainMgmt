@@ -1,5 +1,5 @@
 # About The Problem and Solution
-1. Start with the Problem (simple story)
+**1. Start with the Problem (simple story)**
 
 *"Every night, Kochi Metro must decide which trains run, which are kept as backup, and which go for maintenance. Right now, all the information is scattered — in spreadsheets, WhatsApp, and manual logbooks. The managers only get two hours at night to make these choices, which makes it error-prone and stressful.
 
@@ -11,7 +11,7 @@ If they make a mistake, a train might fail in the morning → delays, cost incre
 
 “Imagine one train is always used → its parts wear faster, costing more.”
 
-2. Then explain the Solution (our project)
+**2. Then explain the Solution (our project)**
 
 *"We are building a smart system that takes all this scattered data, applies rules, and gives managers a ranked list of trains that should go into service. The system will also:
 
@@ -23,7 +23,7 @@ Let managers run simulations (‘what if train X is not available?’).
 
 Learn from history to make better forecasts over time."*
 
-3. Break it into Team Roles (so it’s easy to handle)
+**3. Break it into Team Roles (so it’s easy to handle)**
 
 Frontend Dev (newbie):
 → Build simple pages (Login + Dashboard + Table).
@@ -49,7 +49,7 @@ UI/UX Designer:
 → Make sure screens are clean, intuitive, and easy for supervisors.
 → Create wireframes/figma mockups.
 
-4. Wrap it Up with Why it’s Exciting
+**4. Wrap it Up with Why it’s Exciting**
 
 "This is not just a coding project — it’s solving a real operational headache. If we succeed, we can reduce costs, improve punctuality, and even build something scalable for other metros in India. Each of us has a clear role, and together we can make a working prototype that looks professional and impactful."
 
