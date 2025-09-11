@@ -55,7 +55,7 @@ UI/UX Designer:
 
 
 
-# KMRL_TrainMgmt Prototype
+# Smart Rail Kochi (SRK) Prototype
 
 SIH problem 81
 
